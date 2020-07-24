@@ -73,7 +73,7 @@
           <input class="button expanded" type="submit" value="Sign in">
       </form>
 
-          <a href="https://github.com/VedranSagodic/hellopp21/tree/master/app_foundation.hr">Link na github kod</a>
+          <a href="https://github.com/VedranSagodic/PropertiesApp_foundation/tree/master">Link na github kod</a>
 
 
     <script src="assets/js/vendor.js"></script>
