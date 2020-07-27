@@ -6,9 +6,6 @@ if(!isset($_SESSION['autoriziran'])){
 }
 
 if(isset($_POST['name'])){
-
-  //elog($_POST);
-
   $izraz=$veza->prepare ('insert into users (name, surname, password, e_mail, phone, address) 
   values (:name, :surname, :password, :e_mail, :phone, :address)');
   $izraz->execute($_POST);
@@ -60,32 +57,32 @@ if(isset($_POST['name'])){
     <a class="button" href="user_page.php">Back to user page</a>
     <div class="row columns">
       <label>Name
-      <input type="text" id="name" name="name" placeholder="Name">
+      <input type="text" id="name" name="name" placeholder="Name" required>
       </label>
     </div>
     <div class="row columns">
       <label>Surname
-      <input type="text" id="surname" name="surname" placeholder="Surname">
+      <input type="text" id="surname" name="surname" placeholder="Surname" required>
       </label>
     </div>
     <div class="row columns">
       <label>Password
-      <input type="password" id="password" name="password"  placeholder="Password">
+      <input type="password" id="password" name="password"  placeholder="Password" required>
       </label>
     </div>
     <div class="row columns">
       <label>E-mail
-      <input type="text" id="e_mail" name="e_mail"  placeholder="E-mail">
+      <input type="text" id="e_mail" name="e_mail"  placeholder="E-mail" required>
       </label>
     </div>
     <div class="row columns">
       <label>Phone</label>
-      <input type="number" id="phone" name="phone" placeholder="Phone number">
+      <input type="number" id="phone" name="phone" placeholder="Phone number" required>
       </label>
       </div>
       <div class="row columns">
       <label>Address</label>
-      <input type="text" id="address" name="address" placeholder="Address">
+      <input type="text" id="address" name="address" placeholder="Address" required>
       </label>
       <input class="button expanded" type="submit" value="Add new user">
  </form>
